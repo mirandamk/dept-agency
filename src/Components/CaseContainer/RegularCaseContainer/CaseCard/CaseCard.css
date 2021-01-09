@@ -1,0 +1,52 @@
+.case-card {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.case-card__img {
+  width: 585px;
+  height: auto;
+}
+
+.case-card__img--large{
+    width: 800px;
+    height: 500px; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.case-card__name {
+  color: #939393;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.case-card__description {
+  color: #272727;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+a.case-card__url {
+  display: flex;
+  justify-content: start;
+  color: #1a18f7;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+a.case-card__url:-webkit-any-link {
+  text-decoration: none;
+}
+
+a.case-card__url:hover{
+    color: #0c0a57;
+}

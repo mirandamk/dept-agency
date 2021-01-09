@@ -1,0 +1,122 @@
+[
+    {
+
+            "id": 1,
+            "name": "Bol.com",
+            "description": "A summer island in the Netherlands",
+            "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141261/Dept/bolcom_l7rxhh.png",
+            "url": "www.bol.com"
+    },
+    {
+          "id": 2, 
+          "name": "KEMPEN",
+          "description": "Not some average banking website",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141262/Dept/kempen_u1m4py.png",
+          "url": "www.google.com"
+    },
+    {
+          "id": 3, 
+          "name": "PHILIPS",
+          "description": "Beautiful design meets innovative technology",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141262/Dept/philips_kqbbg6.png",
+          "url": "www.philips.nl"
+    },
+    {
+          "id": 4, 
+          "name": "GEMEENTEMUSEUM",
+          "description": "A 100 years of Mondriaan & De Stijl",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141261/Dept/gemeentemuseum_epwnzr.png",
+          "url": "www.google.nl"
+    },                       
+    {
+          "id": 5, 
+          "name": "MICROSOFT",
+          "description": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+          "img": "",
+          "url": "www.google.nl"
+    },                                 
+    {
+          "id": 6, 
+          "name": "O’NEILL",
+          "description": "Integrating existing content into O’Neill’s new e-commerce platform",
+          "img": "",
+          "url": "www.google.nl"
+    },      
+    {
+          "id": 7, 
+          "name": "Florensis",
+          "description": "Rethinking the entire online ecosystem",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141261/Dept/florensis_uhtpz2.png",
+          "url": "www.google.nl"
+    },          
+   {
+          "id": 8, 
+          "name": "BE LIGHTING",
+          "description": "Delivering clarity on a global scale",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141263/Dept/lightning_oqqvwe.png",
+          "url": "www.google.nl"
+    }, 
+    {
+          "id": 9, 
+          "name": "TUI",
+          "description": "Swipe to find your next holiday destination",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141263/Dept/tui_jaw8up.png",
+          "url": "www.tui.nl"
+    }, 
+    {
+          "id": 10, 
+          "name": "BUTLINS",
+          "description": "Enhancing customer experience for personalised holiday planning using real time data",
+          "img": "",
+          "url": "www.google.nl"
+    },   
+    {
+          "id": 11, 
+          "name": "VACANSESELECT",
+          "description": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+          "img": "",
+          "url": "www.google.nl"
+    },   
+    {
+          "id": 12, 
+          "name": "CHOCOMEL",
+          "description": "A campaign for the limited edition letter packs",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141260/Dept/chocomel_mrag5d.png",
+          "url": "www.google.nl"
+    },  
+    {
+          "id": 13, 
+          "name": "JBL",
+          "description": "Live like a champion with Jerome Booteng",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141260/Dept/jbl_qvuwac.png",
+          "url": "www.google.nl"
+    }, 
+    {
+          "id": 14, 
+          "name": "ZALANDO",
+          "description": "Innovative SEO and content strategy for Zalando",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141264/Dept/zalando_vh77i5.png",
+          "url": "www.google.nl"
+    }, 
+    {
+          "id": 15, 
+          "name": "KONINKLIJKE BIBLIOTHEEK",
+          "description": "The search for the most influential book ever",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141262/Dept/koninklijke-bibliotheek_v80unr.png",
+          "url": "www.google.nl"
+    }, 
+    {
+          "id": 16, 
+          "name": "LIBERTY GLOBAL",
+          "description": "Delivering complex commerce solutions",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141264/Dept/liberty-global_zxb404.png",
+          "url": "www.google.nl"
+    }, 
+    {
+          "id": 17, 
+          "name": "ARLA",
+          "description": "Swipe to find your next holiday destination",
+          "img": "https://res.cloudinary.com/dsuhcbmxk/image/upload/v1610141261/Dept/arla_nkcuhv.png",
+          "url": "www.google.nl"
+    }
+]

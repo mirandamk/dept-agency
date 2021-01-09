@@ -1,0 +1,61 @@
+.client-logos {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-width: 250px;
+  margin: 0 auto;
+}
+
+.client-logos__logo {
+  width: 250px;
+  height: 126px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.client-logo__logo--1 {
+  background-image: url("../../../images/Nivea_logo_zwart.png");
+}
+
+.client-logo__logo--2 {
+  background-image: url("../../../images/Mona_logo_zwart.png");
+}
+
+.client-logo__logo--3 {
+  background-image: url("../../../images/Transavia_logo_zwart.png");
+}
+
+.client-logo__logo--4 {
+  background-image: url("../../../images/Zalando_logo_zwart.png");
+}
+
+.client-logo__logo--5 {
+  background-image: url("../../../images/Tomtom_logo_zwart.png");
+}
+
+.client-logo__logo--6 {
+  background-image: url("../../../images/Unilever_logo_zwart.png");
+}
+
+.client-logo__logo--7 {
+  background-image: url("../../../images/Adidas_logo_zwart.png");
+}
+.client-logo__logo--8 {
+  background-image: url("../../../images/Pathe_logo_zwart.png");
+}
+
+.client-logo__logo--9 {
+  background-image: url("../../../images/NN_logo_zwart.png");
+}
+
+.client-logo__logo--10 {
+  background-image: url("../../../images/Ziggo_logo_zwart.png");
+}
+
+.client-logo__logo--11 {
+  background-image: url("../../../images/Walibi_logo_zwart.png");
+}
+
+.client-logo__logo--12 {
+  background-image: url("../../../images/KLM_logo_zwart.png");
+}

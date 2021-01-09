@@ -1,0 +1,10 @@
+.large-img-and-no-img-container{
+    display:flex; 
+    flex-direction:row; 
+    justify-content: space-between;
+    width: 1210px;
+}
+
+.large-img-and-no-img-container__no-img-cases{
+    width: 260px; 
+}

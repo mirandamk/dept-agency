@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import CaseContainer from "./Components/CaseContainer/CaseContainer";
+import ClientsContainer from "./Components/ClientsContainer/ClientsContainer";
+
+import "./App.css";
+import ContactContainer from "./Components/ContactContainer/ContactContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Dept
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <p>Hi</p>
+      <CaseContainer className='app__case-container' />
+      <ClientsContainer />
+      <ContactContainer/>
     </div>
   );
 }
