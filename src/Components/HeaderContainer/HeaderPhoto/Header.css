@@ -1,0 +1,17 @@
+.header {
+  width: 100vw;
+  height: 100%;
+  background-image: url("../../../images/florensis.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__title{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: #0e0e0e;
+    font-size: 400px;
+    font-weight: 400;
+    line-height: 400px;
+}

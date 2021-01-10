@@ -1,0 +1,25 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0px 50px 50px 50px;
+  border-bottom: 2px solid #0e0e0e;
+}
+
+.header-menu__dept {
+  width: 100px;
+  height: 28px;
+  background-image: url("../../../images/DEPT\ Logo\ Black.png");
+}
+
+.header-menu__menu {
+  color: #0e0e0e;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
