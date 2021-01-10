@@ -1,0 +1,38 @@
+.navbar-countries {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 50px;
+  position: absolute;
+  z-index: 10;
+}
+
+a.navbar-countries__link,
+.navbar-countries__title {
+    display: flex;
+    flex-direction: row;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.navbar-countries__title {
+  opacity: 0.5;
+}
+
+.navbar-countries__link-img {
+  visibility: hidden;
+  display: none;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+}
+
+a.navbar-countries__link:hover .navbar-countries__link-img {
+  visibility: visible;
+  display: block;
+}
+

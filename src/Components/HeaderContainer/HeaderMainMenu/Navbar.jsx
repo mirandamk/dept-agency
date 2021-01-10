@@ -1,16 +1,39 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import TriangleIcon from "../../../images/Triangle.png";
 
-function Navbar(props) {
-    return (
-        <>
-            
-        </>
-    )
+import "./Navbar.css";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="home" /> HOME
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="werk" /> WERK
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="over" /> OVER
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="diensten" />{" "}
+        DIENSTEN
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="partners" />{" "}
+        PARTNERS
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="stories" />{" "}
+        STORIES
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="vacatures" />{" "}
+        VACATURES
+      </NavLink>
+    </nav>
+  );
 }
 
-Navbar.propTypes = {
-    
-}
-
-export default Navbar
+export default Navbar;

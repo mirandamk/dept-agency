@@ -1,16 +1,28 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import Navbar from "./Navbar";
+import HeaderBar from "../HeaderBar/HeaderBar";
 
-function HeaderMainMenu(props) {
-    return (
-        <>
-            
-        </>
-    )
+import "./HeaderMainMenu.css";
+import NavbarCountries from "./NavbarCountries";
+import SocialMediaLinksContainer from "./SocialMediaLinksContainer";
+
+function HeaderMainMenu({ onMenuClicked, isMenuMode }) {
+  return (
+    <div className="header-main-menu">
+      <HeaderBar onMenuClicked={onMenuClicked} isMenuMode={isMenuMode} />
+      <div>
+        <NavbarCountries />
+        <SocialMediaLinksContainer />
+        <Navbar />
+      </div>
+    </div>
+  );
 }
 
 HeaderMainMenu.propTypes = {
-    
-}
+  onMenuClicked: PropTypes.func,
+  isMenuMode: PropTypes.bool,
+};
 
-export default HeaderMainMenu
+export default HeaderMainMenu;

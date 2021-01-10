@@ -1,0 +1,17 @@
+.social-media-links-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+
+  .social-media-links-container__link{
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  text-decoration: none;
+  }

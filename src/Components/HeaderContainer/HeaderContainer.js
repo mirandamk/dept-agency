@@ -1,19 +1,32 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Header from './HeaderPhoto/Header'
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import HeaderPhoto from "./HeaderPhoto/HeaderPhoto";
 
-import './HeaderContainer.css'
+import "./HeaderContainer.css";
+import HeaderMainMenu from "./HeaderMainMenu/HeaderMainMenu";
 
 function HeaderContainer(props) {
-    return (
-        <div className="header-container">
-          <Header /> 
-        </div>
-    )
+  const [isMenuMode, setIsMenuMode] = useState(false);
+
+  const onMenuClicked = () => {
+    if (isMenuMode === false) {
+      setIsMenuMode(true);
+    } else {
+      setIsMenuMode(false);
+    }
+  };
+
+  return (
+    <div className="header-container">
+      {isMenuMode ? (
+        <HeaderMainMenu onMenuClicked={onMenuClicked} isMenuMode={isMenuMode} />
+      ) : (
+        <HeaderPhoto onMenuClicked={onMenuClicked} />
+      )}
+    </div>
+  );
 }
 
-HeaderContainer.propTypes = {
-    
-}
+HeaderContainer.propTypes = {};
 
-export default HeaderContainer
+export default HeaderContainer;

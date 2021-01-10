@@ -1,0 +1,44 @@
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0px 50px;
+  border-bottom: 2px solid #0e0e0e;
+}
+
+.header-bar__dept {
+  width: 100px;
+  height: 28px;
+  background-image: url("../../../images/DEPT\ Logo\ Black.png");
+}
+
+.header-bar__btn {
+  color: #0e0e0e;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.header-bar--x {
+  background-color: #0e0e0e;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header-bar__dept--x {
+  background-image: url("../../../images/DEPT\ Logo\ White.png");
+}
+
+.header-bar__btn-x {
+  color: #ffffff;
+}
+
+.header-bar__btn--x{
+  width: 27px;
+  height: 35px; 
+  color: #ffffff;
+}

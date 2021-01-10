@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin: 85px 50px 0px 50px;
+  position: absolute;
+}
+
+a.navbar__link {
+  border-bottom: 1px solid #3b3b3b;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 70px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.navbar__link-img {
+  visibility: hidden;
+}
+
+a.navbar__link:hover .navbar__link-img {
+  visibility: visible;
+}
