@@ -9,11 +9,11 @@
   height: auto;
 }
 
-.case-card__img--large{
-    width: 800px;
-    height: 500px; 
-    object-fit: cover;
-    object-position: center;
+.case-card__img--large {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .case-card__name {
@@ -47,6 +47,41 @@ a.case-card__url:-webkit-any-link {
   text-decoration: none;
 }
 
-a.case-card__url:hover{
-    color: #0c0a57;
+a.case-card__url:hover {
+  color: #0c0a57;
+}
+
+@media screen and (max-width: 420px) {
+  .case-card {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .case-card__img {
+    width: 95vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .case-card__img--large {
+    width: 95vw;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .case-card__img--mobile-img,
+  .case-card__img--mobile-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  a.case-card__url {
+    visibility: hidden;
+  }
 }

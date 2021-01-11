@@ -11,8 +11,6 @@ function LargeImgAndNoImgContainer({
   noImgDataBottom,
   largeImageLeft,
 }) {
-  console.log(noImgDataTop);
-  console.log(noImgDataBottom);
   return (
     <div className="large-img-and-no-img-container">
       {largeImageLeft ? (
@@ -33,7 +31,8 @@ function LargeImgAndNoImgContainer({
             <CaseNoImg caseNoImgData={noImgDataBottom} />
           </div>
           <CaseCard
-            classNameImg="case-card__img--large"
+            classNameImg="case-card__img--mobile-img"
+            classNameText="case-card__img--mobile-text"
             caseData={leftCaseData}
           />
         </>

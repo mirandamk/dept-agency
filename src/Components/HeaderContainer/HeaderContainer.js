@@ -17,9 +17,14 @@ function HeaderContainer(props) {
   };
 
   return (
-    <div className="header-container">
+    <div className={`header-container ${isMenuMode ? "header-container__menu" : ""}`}>
       {isMenuMode ? (
-        <HeaderMainMenu onMenuClicked={onMenuClicked} isMenuMode={isMenuMode} />
+        <div>
+          <HeaderMainMenu
+            onMenuClicked={onMenuClicked}
+            isMenuMode={isMenuMode}
+          />
+        </div>
       ) : (
         <HeaderPhoto onMenuClicked={onMenuClicked} />
       )}

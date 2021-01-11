@@ -3,11 +3,13 @@ import axios from "axios";
 import RegularCaseContainer from "./RegularCaseContainer/RegularCaseContainer";
 import LargeImgAndNoImgContainer from "./LargeImgAndNoImgContainer/LargeImgAndNoImgContainer";
 import CaseQuote from "./CaseQuote/CaseQuote";
+import SearchBar from "./SearchBar/SearchBar";
 
 import "./CaseContainer.css";
 
 function CaseContainer() {
   const [cases, setCases] = useState([]);
+  const [industry, setIndustry] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,8 +24,39 @@ function CaseContainer() {
   let regularCases = cases.filter((singleCase) => singleCase.img);
   let noImgCases = cases.filter((singleCase) => singleCase.img === "");
 
+  const handleIndustryInputChange = (data) => {
+    setIndustry({ ...industry, value: data.value });
+  };
+
+  useEffect(() => {
+    filterCases()
+  }, [industry]);
+
+  let filteredCases = []
+
+function filterCases() {
+regularCases.map((regularCase) => {
+  if (regularCase.industry === industry.value) {
+    console.log('same type')
+    filteredCases.push(regularCase)
+  } else {
+    console.log('not same type')
+  }
+  console.log(filteredCases)
+  return filteredCases
+}
+)
+
+}
+
+console.log(filteredCases)
+
   return (
     <>
+      <SearchBar
+        handleIndustryInputChange={handleIndustryInputChange}
+        industry={industry}
+      />
       <RegularCaseContainer
         leftCaseData={regularCases[0]}
         rightCaseData={regularCases[1]}
@@ -43,8 +76,8 @@ function CaseContainer() {
         rightCaseData={regularCases[6]}
       />
       <LargeImgAndNoImgContainer
-        noImgDataTop={noImgCases[0]}
-        noImgDataBottom={noImgCases[1]}
+        noImgDataTop={noImgCases[2]}
+        noImgDataBottom={noImgCases[3]}
         leftCaseData={regularCases[4]}
       />
       <RegularCaseContainer

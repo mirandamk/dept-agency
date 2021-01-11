@@ -8,3 +8,17 @@
 .large-img-and-no-img-container__no-img-cases{
     width: 260px; 
 }
+
+@media screen and (max-width: 420px) {
+    .large-img-and-no-img-container{
+        display:flex; 
+        flex-direction:column; 
+        width: 95vw;
+        margin: 10px; 
+    }
+
+    .large-img-and-no-img-container__no-img-cases{
+        width: 95vw; 
+    }
+  }
+  

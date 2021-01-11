@@ -1,4 +1,12 @@
-.regular-case-container{
-    display:flex;
+.regular-case-container {
+  display: flex;
+  margin: 5px;
+}
+
+@media screen and (max-width: 420px) {
+  .regular-case-container {
+    display: flex;
+    flex-direction: column;
     margin: 5px;
+  }
 }

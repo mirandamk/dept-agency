@@ -15,3 +15,14 @@
     font-weight: 400;
     line-height: 400px;
 }
+
+@media screen and (max-width: 420px) {
+  .header-photo {
+    min-width: auto;
+    height: 60vh;
+  }
+
+  .header-photo__title{
+    font-size: 170px;
+}
+}

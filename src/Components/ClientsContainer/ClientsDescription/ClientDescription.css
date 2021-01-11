@@ -22,3 +22,9 @@
     line-height: 27px;
     text-align: center;
 }
+
+@media screen and (max-width: 420px) {
+    .client-description__text{
+        width: 95vw; 
+    }
+  }

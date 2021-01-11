@@ -24,3 +24,10 @@ a.navbar__link {
 a.navbar__link:hover .navbar__link-img {
   visibility: visible;
 }
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    width: 92%;
+    margin: 10px;
+  }
+}

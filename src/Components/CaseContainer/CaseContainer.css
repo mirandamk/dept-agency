@@ -1,3 +1,9 @@
-.case-container{
-    width: 1200px;
+.case-container {
+  width: 1200px;
+}
+
+@media screen and (max-width: 420px) {
+  .case-container {
+    width: 100vw;
+  }
 }

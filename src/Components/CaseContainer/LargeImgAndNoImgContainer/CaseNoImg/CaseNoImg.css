@@ -1,5 +1,6 @@
 .case-no-img {
     margin: 10px;
+
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
   }
@@ -14,6 +15,7 @@
   }
   
   .case-no-img__name {
+    padding-top: 15px;
     color: #939393;
     font-family: Arial;
     font-size: 15px;
@@ -46,3 +48,9 @@
       color: #0c0a57;
   }
   
+  @media screen and (max-width: 420px) {
+    .case-no-img__img {
+      width: 95vw;
+      height: auto;
+    }
+}

@@ -2,3 +2,10 @@
   padding: 100px;
   background-color: #f3f6f6;
 }
+
+@media screen and (max-width: 420px) {
+  .clients-container {
+    margin: 10px;
+    padding: 20px;
+  }
+}

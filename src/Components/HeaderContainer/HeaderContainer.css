@@ -2,3 +2,15 @@
     min-width: auto; 
     height: 100vh;
 }
+
+@media screen and (max-width: 420px) {
+    .header-container{
+        min-width: auto; 
+        height: 60vh;
+    }
+
+    .header-container__menu{
+        height: 100vh; 
+    }
+  }
+  

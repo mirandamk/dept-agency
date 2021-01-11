@@ -13,7 +13,7 @@ function App() {
         <HeaderContainer />
         <CaseContainer className="app__case-container" />
         <ClientsContainer />
-        <ContactContainer />
+        <ContactContainer /> 
       </Router>
     </div>
   );

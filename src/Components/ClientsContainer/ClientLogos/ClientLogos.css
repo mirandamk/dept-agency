@@ -59,3 +59,32 @@
 .client-logo__logo--12 {
   background-image: url("../../../images/KLM_logo_zwart.png");
 }
+
+
+@media screen and (max-width: 420px) {
+  .client-logos {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-width: 45vw;
+    margin: 30px auto;
+  }
+  
+  .client-logos__logo{
+    width: 45vw;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40vw;
+  }
+
+
+  .client-logo__logo--7,
+  .client-logo__logo--8,
+  .client-logo__logo--9,
+  .client-logo__logo--10,
+  .client-logo__logo--11,
+  .client-logo__logo--12 {
+    display: none; 
+  }
+}
