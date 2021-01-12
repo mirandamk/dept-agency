@@ -21,6 +21,12 @@
 
 .contact-form__error-message {
   margin: 0px;
+  color: rgb(184, 0, 0);
+  font-weight: 700;
+}
+
+.contact-form__error {
+  border: 1px solid rgb(184, 0, 0)
 }
 
 .contact-form__submit-btn {

@@ -1,16 +1,15 @@
-.header-container{
-    min-width: auto; 
-    height: 100vh;
+.header-container {
+  height: 740px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 420px) {
-    .header-container{
-        min-width: auto; 
-        height: 60vh;
-    }
-
-    .header-container__menu{
-        height: 100vh; 
-    }
+  .header-container {
+    width: auto;
+    height: 60vh;
   }
-  
+
+  .header-container__menu {
+    height: 100vh;
+  }
+}

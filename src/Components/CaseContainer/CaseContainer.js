@@ -10,6 +10,8 @@ import "./CaseContainer.css";
 function CaseContainer() {
   const [cases, setCases] = useState([]);
   const [industry, setIndustry] = useState();
+  const [filter, setFilter] = useState();
+  const [filteredCases, setFilteredCases] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,45 +19,44 @@ function CaseContainer() {
         "https://private-712941-deptagency.apiary-mock.com/cases"
       );
       setCases(result.data);
+      setFilteredCases(result.data);
     };
     fetchData();
   }, []);
 
-  let regularCases = cases.filter((singleCase) => singleCase.img);
-  let noImgCases = cases.filter((singleCase) => singleCase.img === "");
-
   const handleIndustryInputChange = (data) => {
-    setIndustry({ ...industry, value: data.value });
+    if (data) {
+      setIndustry({ ...industry, label: data.label });
+    }
   };
 
   useEffect(() => {
-    filterCases()
+    let filteredIndustries = cases;
+    if (industry !== null) {
+      filteredIndustries = filteredIndustries.filter(
+        (filteredIndustry) => filteredIndustry.industry === industry.label
+      );
+      setFilteredCases(filteredIndustries);
+    }
   }, [industry]);
 
-  let filteredCases = []
-
-function filterCases() {
-regularCases.map((regularCase) => {
-  if (regularCase.industry === industry.value) {
-    console.log('same type')
-    filteredCases.push(regularCase)
-  } else {
-    console.log('not same type')
+  function clearFilter() {
+    setFilteredCases(cases);
   }
-  console.log(filteredCases)
-  return filteredCases
-}
-)
 
-}
+  // console.log(cases);
+  // console.log(industry);
+  // console.log(noImgCases);
 
-console.log(filteredCases)
+  let regularCases = filteredCases.filter((singleCase) => singleCase.img);
+  let noImgCases = filteredCases.filter((singleCase) => singleCase.img === "");
 
   return (
     <>
       <SearchBar
         handleIndustryInputChange={handleIndustryInputChange}
         industry={industry}
+        clearFilter={clearFilter}
       />
       <RegularCaseContainer
         leftCaseData={regularCases[0]}

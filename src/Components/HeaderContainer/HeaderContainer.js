@@ -17,7 +17,8 @@ function HeaderContainer(props) {
   };
 
   return (
-    <div className={`header-container ${isMenuMode ? "header-container__menu" : ""}`}>
+    <div className="header-container">
+    {/* <div className={`header-container ${isMenuMode ? "header-container__menu" : ""}`}> */}
       {isMenuMode ? (
         <div>
           <HeaderMainMenu

@@ -31,14 +31,18 @@ function Form() {
           <div className="contact-form__field">
             <label className="">EMAIL</label>
             <input
-              className={`contact-form__input ${errors.email && "contact-form__error"}`}
+              className={`contact-form__input ${
+                errors.email && "contact-form__error"
+              }`}
               type="email"
               name="email"
               onChange={handleChange}
               value={values.email || ""}
               required
             />
-            {errors.email && <div className="contact-form__error-message">{errors.email}</div>}
+            {errors.email && (
+              <div className="contact-form__error-message">{errors.email}</div>
+            )}
           </div>
         </div>
 

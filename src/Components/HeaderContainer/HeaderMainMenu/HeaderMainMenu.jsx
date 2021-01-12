@@ -12,8 +12,8 @@ function HeaderMainMenu({ onMenuClicked, isMenuMode }) {
     <div className="header-main-menu">
       <HeaderBar onMenuClicked={onMenuClicked} isMenuMode={isMenuMode} />
       <div>
-        <NavbarCountries/>
-        <SocialMediaLinksContainer/>
+        <NavbarCountries />
+        <SocialMediaLinksContainer />
         <Navbar />
       </div>
     </div>

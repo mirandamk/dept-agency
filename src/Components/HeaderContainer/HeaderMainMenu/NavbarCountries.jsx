@@ -15,7 +15,7 @@ function NavbarCountries() {
           src={TriangleIcon}
           alt="global"
         />
-       GLOBAL
+        GLOBAL
       </NavLink>
       <NavLink className="navbar-countries__link" to="/">
         <img
@@ -65,6 +65,7 @@ function NavbarCountries() {
         />
         SCHWEIZ
       </NavLink>
+
     </nav>
   );
 }

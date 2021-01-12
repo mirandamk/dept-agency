@@ -36,8 +36,8 @@ a.navbar-countries__link:hover .navbar-countries__link-img {
   display: block;
 }
 
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
   .navbar-countries {
     visibility:hidden;
   }
-}
+} */

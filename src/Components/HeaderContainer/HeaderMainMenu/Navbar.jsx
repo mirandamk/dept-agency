@@ -32,6 +32,14 @@ function Navbar() {
         <img className="navbar__link-img" src={TriangleIcon} alt="vacatures" />{" "}
         VACATURES
       </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="events" />{" "}
+        EVENTS
+      </NavLink>
+      <NavLink className="navbar__link" to="/">
+        <img className="navbar__link-img" src={TriangleIcon} alt="contact" />{" "}
+        CONTACT
+      </NavLink>
     </nav>
   );
 }
