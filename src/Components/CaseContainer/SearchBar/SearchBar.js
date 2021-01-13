@@ -12,30 +12,64 @@ const industries = [
   { value: 5, label: "Tourism" },
 ];
 
-function SearchBar({ industry, handleIndustryInputChange, clearFilter }) {
-  const selectInputRefIndustry = useRef();
+function SearchBar({
+  selectedIndustry,
+  handleIndustryInputChange,
+  clearFilter,
+  onUpdateFilter,
+  industry
+}) {
+  const [industryFilter, setIndustryFilter] = useState();
+
+  const onSelectChange = (e) => {
+    handleIndustryInputChange(e.target.name, e.target.value);
+    console.log('send data', e.target.name, e.target.value)
+  };
 
   const handleClearFilterClicked = () => {
     clearFilter();
-    selectInputRefIndustry.current.select.clearValue();
-    console.log( 'clear from search')
+    setIndustryFilter("");
+    console.log("clear from search");
   };
+  // let industry;
+
+  // function sendIndustryFilter() {
+  //   industry = industryFilter;
+  // }
+
+  console.log(industryFilter);
+
+  // console.log(selectedIndustry);
 
   return (
     <div className="search-bar">
       <div className="search-bar__text"></div>
-      <Select
-        ref={selectInputRefIndustry}
-        placeholder="all industries"
-        className="search-bar__input"
-        options={industries}
-        defaultValue={industry}
-        onChange={handleIndustryInputChange}
-      />
+      <select
+        className="search-bar__select"
+        onChange={(data) => onSelectChange(data)}
+
+        // onChange={(e) => {
+        //   const selectedIndustry = e.target.value;
+        //   setIndustryFilter(selectedIndustry);
+        //   sendIndustryFilter();
+        // }}
+      >
+        <option value="" disabled selected>
+          Select your option
+        </option>
+        <option value="Retail">Retail</option>
+        <option value="Banking">Banking</option>
+        <option value="Technology">Technology</option>
+        <option value="Public sector">Public sector</option>
+        <option value="Tourism">Tourism</option>
+        <option value="Retail">Retail</option>
+      </select>
       <button
         className="search-bar__clear-btn"
         onClick={handleClearFilterClicked}
-      > x </button>
+      >
+        x
+      </button>
     </div>
   );
 }

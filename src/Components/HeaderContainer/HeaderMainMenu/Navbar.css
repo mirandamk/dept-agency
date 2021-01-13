@@ -17,9 +17,9 @@ a.navbar__link {
   border-bottom: 1px solid #3b3b3b;
   margin-bottom: 5px;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 68px;
   font-weight: 300;
-  line-height: 70px;
+  line-height: 68px;
   text-align: right;
   text-decoration: none;
 }
@@ -32,9 +32,11 @@ a.navbar__link:hover .navbar__link-img {
   visibility: visible;
 }
 
-/* @media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
   .navbar {
     width: 92%;
     margin: 10px;
+    overflow: visible;
+    -webkit-mask-image: none;
   }
-} */
+}

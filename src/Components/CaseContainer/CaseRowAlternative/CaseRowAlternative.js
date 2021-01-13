@@ -1,32 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CaseNoImg from "./CaseNoImg/CaseNoImg";
-import CaseCard from "../RegularCaseContainer/CaseCard/CaseCard";
+import CaseNoImg from "./CaseNoImg";
+import CaseCard from "../CaseCard/CaseCard";
 
-import "./LargeImgAndNoImgContainer.css";
+import "./CaseRowAlternative.css";
 
-function LargeImgAndNoImgContainer({
+function CaseRowAlternative({
   leftCaseData,
   noImgDataTop,
   noImgDataBottom,
   largeImageLeft,
 }) {
   return (
-    <div className="large-img-and-no-img-container">
+    <div className="case-row-alternative">
       {largeImageLeft ? (
         <>
           <CaseCard
             classNameImg="case-card__img--large"
             caseData={leftCaseData}
           />
-          <div className="large-img-and-no-img-container__no-img-cases">
+          <div className="case-row-alternative__no-img-cases">
             <CaseNoImg caseNoImgData={noImgDataTop} />
             <CaseNoImg caseNoImgData={noImgDataBottom} />
           </div>
         </>
       ) : (
         <>
-          <div className="large-img-and-no-img-container__no-img-cases">
+          <div className="case-row-alternative__no-img-cases">
             <CaseNoImg caseNoImgData={noImgDataTop} />
             <CaseNoImg caseNoImgData={noImgDataBottom} />
           </div>
@@ -41,6 +41,6 @@ function LargeImgAndNoImgContainer({
   );
 }
 
-LargeImgAndNoImgContainer.propTypes = {};
+CaseRowAlternative.propTypes = {};
 
-export default LargeImgAndNoImgContainer;
+export default CaseRowAlternative;

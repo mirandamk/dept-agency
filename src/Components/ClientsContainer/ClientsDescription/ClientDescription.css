@@ -25,6 +25,7 @@
 
 @media screen and (max-width: 420px) {
     .client-description__text{
-        width: 95vw; 
+        width: 70vw; 
+        font-size: 14px;
     }
   }

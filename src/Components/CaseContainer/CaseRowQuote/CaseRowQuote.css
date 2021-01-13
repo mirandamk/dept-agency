@@ -1,8 +1,10 @@
-.case-quote{
+.case-card__quote{
 margin: 60px;
+display:flex;
+justify-content: center;
 }
 
-.case-quote__quote{
+.case-card__quote__description{
     width:761px;
     color: #272727;
     font-size: 36px;
@@ -10,7 +12,7 @@ margin: 60px;
     line-height: 46px;
 }
 
-.case-quote__name{
+.case-card__quote__name{
     color: #272727;
     font-family: Arial;
     font-size: 13px;
@@ -19,11 +21,11 @@ margin: 60px;
 }
 
 @media screen and (max-width: 420px) {
-    .case-quote__quote{
+    .case-card__quote__description{
         width:95vw;
     }
 
-    .case-quote{
+    .case-card__quote{
         margin: 10px;
         }
   }

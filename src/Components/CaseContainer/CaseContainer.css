@@ -1,9 +1,132 @@
 .case-container {
   width: 1200px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-template-areas:
+    "case-0 case-0 case-0 case-1 case-1 case-1"
+    "case-2 case-2 case-2 case-3 case-3 case-3"
+    "case-4 case-4 case-4 case-4  case-5 case-5 "
+    "case-4 case-4 case-4 case-4 case-6 case-6"
+    "case-7 case-7 case-7 case-8 case-8 case-8"
+    "case-9 case-9 case-11 case-11 case-11 case-11"
+    "case-10 case-10 case-11 case-11 case-11 case-11 "
+    "case-12  case-12 case-12 case-13 case-13 case-13"
+    "case-14 case-14 case-14 case-15 case-15 case-15"
+    "case-16 case-16 case-16 case-16 case-16 case-16"
+    "case-17 case-17 case-17 case-18 case-18 case-18";
+}
+
+.case-container0 {
+  grid-area: case-0;
+}
+
+.case-container1 {
+  grid-area: case-1;
+}
+
+.case-container2 {
+  grid-area: case-2;
+}
+
+.case-container3 {
+  grid-area: case-3;
+}
+
+.case-container4 {
+  grid-area: case-4;
+}
+
+.case-container5 {
+  grid-area: case-5;
+}
+
+.case-container6 {
+  grid-area: case-6;
+}
+
+.case-container7 {
+  grid-area: case-7;
+}
+
+.case-container8 {
+  grid-area: case-8;
+}
+
+.case-container9 {
+  grid-area: case-9;
+}
+
+.case-container10 {
+  grid-area: case-10;
+}
+
+.case-container11 {
+  grid-area: case-11;
+}
+
+.case-container12 {
+  grid-area: case-12;
+}
+
+.case-container13 {
+  grid-area: case-13;
+}
+
+.case-container14 {
+  grid-area: case-14;
+}
+
+.case-container15 {
+  grid-area: case-15;
+}
+
+.case-container16 {
+  grid-area: case-16;
+}
+
+.case-container17 {
+  grid-area: case-17;
+}
+
+.case-container18 {
+  grid-area: case-18;
 }
 
 @media screen and (max-width: 420px) {
   .case-container {
     width: 100vw;
+    display:flex; 
+    justify-content: center;
+    display: grid; 
+    grid-template-areas: none; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .case-container0,
+  .case-container1,
+  .case-container2,
+  .case-container3,
+  .case-container4,
+  .case-container5,
+  .case-container6,
+  .case-container7,
+  .case-container8,
+  .case-container9,
+  .case-container10,
+  .case-container11,
+  .case-container12,
+  .case-container13,
+  .case-container14,
+  .case-container15, 
+  .case-container16, 
+  .case-container17, 
+  .case-container18 {
+    grid-column: auto;
+    grid-row: auto;
   }
 }

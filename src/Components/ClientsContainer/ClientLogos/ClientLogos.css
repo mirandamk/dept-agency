@@ -63,15 +63,15 @@
 
 @media screen and (max-width: 420px) {
   .client-logos {
-    max-width: 95vw;
+    max-width: 90vw;
     display: grid;
+    padding: 0px;
     grid-template-columns: repeat(2, 1fr);
-    column-width: 45vw;
-    margin: 30px auto;
+    column-width: 40vw;
   }
   
   .client-logos__logo{
-    width: 45vw;
+    width: 40vw;
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
