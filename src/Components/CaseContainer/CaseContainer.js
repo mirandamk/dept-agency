@@ -40,15 +40,15 @@ function CaseContainer() {
   }
 
   return (
-    <>
-      <div className="search-bar-container">
+    <div className="case-container">
+      <div className="case-container__search-bar">
         <SearchBar
           handleIndustryInputChange={handleIndustryInputChange}
           industry={industry}
           clearFilter={clearFilter}
         />
       </div>
-      <div className="case-container">
+      <div className="case-container__cases">
         {filteredCases.map((singleCase, index) => {
           if (singleCase.tag === "regular") {
             return (
@@ -95,7 +95,7 @@ function CaseContainer() {
           }
         })}
       </div>
-    </>
+    </div>
   );
 }
 
