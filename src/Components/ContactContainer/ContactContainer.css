@@ -1,6 +1,25 @@
 .contact-container {
   display: flex;
-  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.contact-container__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container img {
+  height: 70px;
+}
+
+.contact-container__top {
+  color: #1a18f7;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .contact-container__text {
@@ -18,6 +37,10 @@
     align-items: center;
     margin: 0px;
     padding: 20px;
+  }
+
+  .contact-container__scroll {
+    display: none;
   }
 
   .contact-container__text {

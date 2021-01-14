@@ -24,7 +24,6 @@ a.navbar-countries__link,
 }
 
 .navbar-countries__link-img {
-  /* visibility: hidden; */
   display: none;
   width: 10px;
   height: 10px;

@@ -22,7 +22,7 @@ function CaseContainer() {
   }, []);
 
   const handleIndustryInputChange = (key, value) => {
-    setIndustry({ value  });
+    setIndustry({ value });
   };
 
   useEffect(() => {
@@ -39,15 +39,15 @@ function CaseContainer() {
     setFilteredCases(cases || null);
   }
 
-  console.log(cases)
-
   return (
     <>
-      <SearchBar
-        handleIndustryInputChange={handleIndustryInputChange}
-        industry={industry}
-        clearFilter={clearFilter}
-      />
+      <div className="search-bar-container">
+        <SearchBar
+          handleIndustryInputChange={handleIndustryInputChange}
+          industry={industry}
+          clearFilter={clearFilter}
+        />
+      </div>
       <div className="case-container">
         {filteredCases.map((singleCase, index) => {
           if (singleCase.tag === "regular") {

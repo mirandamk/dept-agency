@@ -27,7 +27,6 @@ function useForm(callback, validate) {
       ...values,
       [event.target.name]: event.target.value,
     }));
-    console.log(values);
   };
 
   return {

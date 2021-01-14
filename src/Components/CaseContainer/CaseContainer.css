@@ -106,7 +106,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
   .case-container0,
   .case-container1,
   .case-container2,
@@ -128,5 +127,9 @@
   .case-container18 {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .case-container11{
+    display:none;
   }
 }

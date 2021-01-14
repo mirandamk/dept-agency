@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <HeaderContainer />
-        <CaseContainer className="app__case-container" />
+        <CaseContainer/>
         <ClientsContainer />
         <ContactContainer /> 
       </Router>
