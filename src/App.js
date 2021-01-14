@@ -1,10 +1,10 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import CaseContainer from "./Components/CaseContainer/CaseContainer";
 import ClientsContainer from "./Components/ClientsContainer/ClientsContainer";
-import { BrowserRouter as Router } from "react-router-dom";
-
-import "./App.css";
 import ContactContainer from "./Components/ContactContainer/ContactContainer";
 import HeaderContainer from "./Components/HeaderContainer/HeaderContainer";
+
+import "./App.css";
 
 function App() {
   return (

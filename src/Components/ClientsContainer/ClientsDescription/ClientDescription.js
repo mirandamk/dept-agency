@@ -1,9 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-import './ClientDescription.css'
+import "./ClientDescription.css";
 
-function ClientDescription(props) {
+function ClientDescription() {
   return (
     <div className="client-description">
       <div className="client-description__title">CLIENTS</div>
@@ -15,7 +14,5 @@ function ClientDescription(props) {
     </div>
   );
 }
-
-ClientDescription.propTypes = {};
 
 export default ClientDescription;

@@ -33,6 +33,10 @@ function CaseCard({
 
 CaseCard.propTypes = {
   caseData: PropTypes.object,
+  classNameImg: PropTypes.string,
+  classNameName: PropTypes.string,
+  classNameDescription: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default CaseCard;

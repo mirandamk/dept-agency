@@ -14,9 +14,12 @@ function HeaderBar({ onMenuClicked, isMenuMode }) {
           </button>
         </div>
       ) : (
-        <div className="header-bar header-bar--x">
-          <div className="header-bar__dept header-bar__dept--x"></div>
-          <button onClick={onMenuClicked} className="header-bar__btn header-bar__btn--x">
+        <div className="header-bar header-bar--black">
+          <div className="header-bar__dept header-bar__dept--black"></div>
+          <button
+            onClick={onMenuClicked}
+            className="header-bar__btn header-bar__btn--black"
+          >
             X
           </button>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
-import TriangleIcon from "../../../images/Triangle.png";
+import TriangleIcon from "../../../../images/Triangle.png";
 
 import "./NavbarCountries.css";
 
@@ -65,7 +64,6 @@ function NavbarCountries() {
         />
         SCHWEIZ
       </NavLink>
-
     </nav>
   );
 }

@@ -3,11 +3,11 @@ import ContactForm from "./ContactForm/ContactForm";
 
 import "./ContactContainer.css";
 
-function scrollToTopClicked() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
 function ContactContainer() {
+  function scrollToTopClicked() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="contact-container">
       <div className="contact-container__text">
@@ -18,7 +18,5 @@ function ContactContainer() {
     </div>
   );
 }
-
-ContactContainer.propTypes = {};
 
 export default ContactContainer;

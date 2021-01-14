@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import HeaderPhoto from "./HeaderPhoto/HeaderPhoto";
-
-import "./HeaderContainer.css";
 import HeaderMainMenu from "./HeaderMainMenu/HeaderMainMenu";
 
-function HeaderContainer(props) {
+import "./HeaderContainer.css";
+
+function HeaderContainer() {
   const [isMenuMode, setIsMenuMode] = useState(false);
 
   const onMenuClicked = () => {
@@ -17,8 +16,11 @@ function HeaderContainer(props) {
   };
 
   return (
-    // <div className="header-container">
-    <div className={`header-container ${isMenuMode ? "header-container__menu" : ""}`}>
+    <div
+      className={`header-container ${
+        isMenuMode ? "header-container__menu" : ""
+      }`}
+    >
       {isMenuMode ? (
         <div>
           <HeaderMainMenu
@@ -32,7 +34,5 @@ function HeaderContainer(props) {
     </div>
   );
 }
-
-HeaderContainer.propTypes = {};
 
 export default HeaderContainer;

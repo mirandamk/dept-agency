@@ -13,6 +13,14 @@
   margin: 20px 30px;
 }
 
+.contact-form__label {
+  color: #272727;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .contact-form__input {
   width: 300px;
   border: none;

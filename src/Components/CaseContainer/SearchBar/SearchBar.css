@@ -1,29 +1,5 @@
 .search-bar{
     display: flex;
-
-}
-
-.search-bar__input {
-  width: 20vw;
-  margin-left: 15px;
-  color: #363648;
-  text-indent: 5px;
-  font-size: 16px;
-}
-
-.css-yk16xz-control {
-  /* border: none!important; */
-  outline: none !important;
-  border-color: #ffffff !important;
-}
-
-.css-1pahdxg-control {
-  box-shadow: 0 0 0 1px #ffffff !important;
-}
-
-.css-1pahdxg-control:hover {
-  border-color: #ffffff !important;
-  box-shadow: 0 0 0 1px #ffffff !important;
 }
 
 .search-bar__clear-btn{

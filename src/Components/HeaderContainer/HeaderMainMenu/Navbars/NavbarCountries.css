@@ -1,9 +1,9 @@
 .navbar-countries {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px 0px 50px;
   position: absolute;
   z-index: 10;
+  margin: 10px 0px 0px 50px;
 }
 
 a.navbar-countries__link,
@@ -24,7 +24,7 @@ a.navbar-countries__link,
 }
 
 .navbar-countries__link-img {
-  visibility: hidden;
+  /* visibility: hidden; */
   display: none;
   width: 10px;
   height: 10px;

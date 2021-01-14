@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Navbar from "./Navbar";
+import Navbar from "./Navbars/Navbar";
 import HeaderBar from "../HeaderBar/HeaderBar";
 
 import "./HeaderMainMenu.css";
-import NavbarCountries from "./NavbarCountries";
-import SocialMediaLinksContainer from "./SocialMediaLinksContainer";
+import NavbarCountries from "./Navbars/NavbarCountries";
+import SocialMediaLinksContainer from "./Navbars/SocialMediaLinksContainer";
 
 function HeaderMainMenu({ onMenuClicked, isMenuMode }) {
   return (

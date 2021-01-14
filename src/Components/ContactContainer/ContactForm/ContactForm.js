@@ -19,7 +19,7 @@ function Form() {
       <form onSubmit={handleSubmit} noValidate>
         <div className="contact-form__name-email">
           <div className="contact-form__field">
-            <label className="">NAME</label>
+            <label className="contact-form__label">NAME</label>
             <input
               className="contact-form__input"
               type="text"
@@ -29,7 +29,7 @@ function Form() {
             />
           </div>
           <div className="contact-form__field">
-            <label className="">EMAIL</label>
+            <label className="contact-form__label">EMAIL</label>
             <input
               className={`contact-form__input ${
                 errors.email && "contact-form__error"
@@ -47,7 +47,7 @@ function Form() {
         </div>
 
         <div className="contact-form__field">
-          <label className="">MESSAGE</label>
+          <label className="contact-form__label">MESSAGE</label>
           <textarea
             className="contact-form__input"
             name="message"

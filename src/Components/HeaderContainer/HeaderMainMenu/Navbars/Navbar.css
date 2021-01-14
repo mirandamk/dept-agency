@@ -1,21 +1,27 @@
 .navbar {
+  width: 92%;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  width: 92%;
-  height: 500px; 
-  margin: 85px 0px 0px 50px;
   position: absolute;
+  margin: 85px 0px 0px 50px;
   overflow: auto;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
 }
 
 .navbar::-webkit-scrollbar {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 a.navbar__link {
-  border-bottom: 1px solid #3b3b3b;
   margin-bottom: 5px;
+  border-bottom: 1px solid #3b3b3b;
   color: #ffffff;
   font-size: 68px;
   font-weight: 300;

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import TriangleIcon from "../../../images/Triangle.png";
+import TriangleIcon from "../../../../images/Triangle.png";
 
 import "./Navbar.css";
 
@@ -17,27 +17,27 @@ function Navbar() {
         <img className="navbar__link-img" src={TriangleIcon} alt="over" /> OVER
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="diensten" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="diensten" />
         DIENSTEN
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="partners" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="partners" />
         PARTNERS
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="stories" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="stories" />
         STORIES
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="vacatures" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="vacatures" />
         VACATURES
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="events" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="events" />
         EVENTS
       </NavLink>
       <NavLink className="navbar__link" to="/">
-        <img className="navbar__link-img" src={TriangleIcon} alt="contact" />{" "}
+        <img className="navbar__link-img" src={TriangleIcon} alt="contact" />
         CONTACT
       </NavLink>
     </nav>
