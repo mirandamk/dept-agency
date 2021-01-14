@@ -1,3 +1,18 @@
+# The Frontend Developers Assignment by Miranda Kamp for DEPT Agency
+
+The app has been made for Dept Agency to showcase my digital and visual skills as a frontend developer. For that, the following technologies have been use:
+
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^1.1.0"
+
+The app contains some of Dept Agency's cases and clients, a contact form, a menu and has a mobile and desktop version. Below you can find the instruction on how to run the code.  
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
