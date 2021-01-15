@@ -52,10 +52,12 @@
 
 .case-container5 {
   grid-area: case-5;
+  margin-right: 8px
 }
 
 .case-container6 {
   grid-area: case-6;
+  margin-right: 8px
 }
 
 .case-container7 {
@@ -68,10 +70,12 @@
 
 .case-container9 {
   grid-area: case-9;
+  margin-left: 8px
 }
 
 .case-container10 {
   grid-area: case-10;
+  margin-left: 8px
 }
 
 .case-container11 {

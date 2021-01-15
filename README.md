@@ -9,7 +9,7 @@ The app has been made for Dept Agency to showcase my digital and visual skills a
     "react-scripts": "4.0.1",
     "web-vitals": "^1.1.0"
 
-The app contains some of Dept Agency's cases and clients, a contact form, a menu and has a mobile and desktop version. Below you can find the instruction on how to run the code.  
+The app contains some of Dept Agency's cases and clients, a contact form, a menu and has a mobile and desktop version. The latest version of the app can be found on the 'main' branch. Below you can find the instruction on how to run the code.  
 
 
 

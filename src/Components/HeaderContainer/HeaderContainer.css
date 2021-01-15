@@ -1,7 +1,6 @@
 .header-container {
   height: 740px;
   max-width: 100%;
-  margin: 10px;
 }
 
 @media screen and (max-width: 420px) {
